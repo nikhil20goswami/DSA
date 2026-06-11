@@ -1,0 +1,17 @@
+#include<iostream>
+using namespace std;
+int fact(int n){
+    int fact = 1;
+    for (int i = 2; i<=n;i++){
+        fact *= i;
+    }
+    return fact;
+}
+int main(){
+    int n;
+    cout<<"The factorial of 1 to : ";
+    cin>>n;
+    for(int i=1;i<=n;i++){
+        cout<<fact(i)<<endl;
+    }
+}
